@@ -63,3 +63,27 @@
     font-weight: 600;
     font-size: 12px;
 }
+
+@media only screen and (max-width: 768px) {
+    .weather {
+        padding: 0 1em 1em 1em;
+    }
+
+    .city {
+        font-size: 2em;
+    }
+
+    .weatherDescription {
+        font-size: 1.2em;
+    }
+
+    .temperature {
+        font-size: 5em;
+        margin: 0.5em 0;
+    }
+
+    .parameterLabel,
+    .parameterValue {
+        font-size: 0.8em;
+    }
+}

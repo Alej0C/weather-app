@@ -64,3 +64,33 @@
 .dailyDetailsGridItem label:last-child {
     color: #212121;
 }
+
+@media (max-width: 768px) {
+    .dailyItem {
+        height: 60px;
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .dailyItem .day {
+        margin-left: 10px;
+    }
+
+    .description {
+        margin-right: 10px;
+    }
+
+    .dailyDetailsGrid {
+        padding: 10px;
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        grid-column-gap: 0;
+        -webkit-column-gap: 0;
+        column-gap: 0;
+    }
+
+    .dailyDetailsGridItem {
+        height: 20px;
+        font-size: 12px;
+    }
+}

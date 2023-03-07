@@ -1,4 +1,10 @@
-.container{
+.container {
   max-width: 1080px;
   margin: 20px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
 }

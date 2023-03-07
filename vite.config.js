@@ -1,8 +1,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import imagemin from 'vite-plugin-imagemin';
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    imagemin(),
+  ],
   server: {
     port: 3030,
   },
