@@ -47,7 +47,7 @@ const CurrentWeather = ({ data }) => {
 
 
 // STYLED-COMPONENTS
-/*const Weather = ({ data }) => {
+/*const CurrentWeather = ({ data }) => {
    return (
       <WeatherContainer>
          <TopContainer>
