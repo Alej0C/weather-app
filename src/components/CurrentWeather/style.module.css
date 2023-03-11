@@ -1,13 +1,14 @@
 .weather {
-    width: 300px;
+    width: 90%;
     border-radius: 6px;
-    box-shadow: 10px -2px 20px 2px rgb(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
     color: #fff;
     background-color: #333;
     margin: 20px auto 0 auto;
     padding: 0 20px 20px 20px;
 }
 
+/* Top and Bottom Sections */
 .top,
 .bottom {
     display: flex;
@@ -15,6 +16,7 @@
     align-items: center;
 }
 
+/* City and Weather Description */
 .city {
     font-weight: 600;
     font-size: 18px;
@@ -30,28 +32,31 @@
     margin: 0;
 }
 
+/* Weather Icon */
 .weatherIcon {
     width: 100px;
 }
 
+/* Temperature */
 .temperature {
     font-weight: 600;
     font-size: 70px;
-    width: auto;
     letter-spacing: -5px;
     margin: 10px 0;
 }
 
+/* Details */
 .details {
-    width: 100%;
     padding-left: 20px;
 }
 
+/* Parameter Rows */
 .parameterRow {
     display: flex;
     justify-content: space-between;
 }
 
+/* Parameter Label and Value */
 .parameterLabel {
     text-align: left;
     font-weight: 400;
@@ -64,26 +69,53 @@
     font-size: 12px;
 }
 
-@media only screen and (max-width: 768px) {
+/* Media Queries */
+
+/* Small Screens */
+@media (max-width: 480px) {
     .weather {
-        padding: 0 1em 1em 1em;
+        width: 95%;
+        margin: 10px auto 0 auto;
+        padding: 0 10px 10px 10px;
     }
-
-    .city {
-        font-size: 2em;
-    }
-
-    .weatherDescription {
-        font-size: 1.2em;
-    }
-
     .temperature {
-        font-size: 5em;
-        margin: 0.5em 0;
+        font-size: 50px;
     }
+    .parameterLabel, .parameterValue {
+        font-size: 10px;
+    }
+}
 
-    .parameterLabel,
-    .parameterValue {
-        font-size: 0.8em;
+/* Medium Screens */
+@media (min-width: 481px) and (max-width: 767px) {
+    .weather {
+        width: 70%;
+        margin: 20px auto 0 auto;
+    }
+    .weatherIcon {
+        width: 80px;
+    }
+    .temperature {
+        font-size: 60px;
+    }
+    .parameterLabel, .parameterValue {
+        font-size: 11px;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 768px) {
+    .weather {
+        width: 60%;
+        margin: 30px auto 0 auto;
+    }
+    .weatherIcon {
+        width: 120px;
+    }
+    .temperature {
+        font-size: 80px;
+    }
+    .parameterLabel, .parameterValue {
+        font-size: 13px;
     }
 }
